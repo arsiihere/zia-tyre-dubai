@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Phone, Zap, MapPin, Shield } from "lucide-react";
+import { Phone, Zap, MapPin, Shield, MessageCircle } from "lucide-react";
 
 export function HeroSection() {
+  const whatsappMessage = encodeURIComponent("Hi! I need urgent tyre assistance. Please help!");
+  const whatsappUrl = `https://wa.me/971529702828?text=${whatsappMessage}`;
+
   return (
     <section className="relative min-h-[90vh] flex items-center bg-hero-gradient overflow-hidden">
       {/* Background pattern */}
@@ -42,22 +45,35 @@ export function HeroSection() {
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-up delay-300">
+          <div className="flex flex-col sm:flex-row gap-4 mb-6 animate-fade-up delay-300">
             <Button variant="hero" size="lg" asChild>
               <Link to="/contact">
                 Get Help Now
               </Link>
             </Button>
             <Button variant="heroOutline" size="lg" asChild>
-              <a href="tel:+971501234567">
+              <a href="tel:+971529702828">
                 <Phone className="w-5 h-5" />
                 Call – We Answer Instantly
               </a>
             </Button>
           </div>
 
+          {/* WhatsApp Button */}
+          <div className="animate-fade-up delay-400 mb-12">
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105"
+            >
+              <MessageCircle className="w-6 h-6" />
+              <span>Message Us on WhatsApp</span>
+            </a>
+          </div>
+
           {/* Trust badges */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 animate-fade-up delay-400">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 animate-fade-up delay-500">
             <div className="flex items-center gap-3 bg-accent/10 backdrop-blur-sm rounded-xl px-4 py-3 border border-accent/20">
               <Zap className="w-5 h-5 text-accent" />
               <div>

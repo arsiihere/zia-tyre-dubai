@@ -38,9 +38,9 @@ export function Navbar() {
               <span className="font-semibold">Instant Response • We Reach You in 20 Minutes!</span>
             </div>
           </div>
-          <a href="tel:+971501234567" className="flex items-center gap-2 hover:text-accent transition-colors">
+          <a href="tel:+971529702828" className="flex items-center gap-2 hover:text-accent transition-colors">
             <Phone className="w-4 h-4" />
-            <span className="font-semibold">+971 50 123 4567</span>
+            <span className="font-semibold">+971 52 970 2828</span>
           </a>
         </div>
       </div>
@@ -119,7 +119,7 @@ export function Navbar() {
 
           <div className="hidden lg:flex items-center gap-3">
             <Button variant="outline" size="sm" asChild>
-              <a href="tel:+971501234567">
+              <a href="tel:+971529702828">
                 <Phone className="w-4 h-4" />
                 Call Now
               </a>
@@ -159,7 +159,7 @@ export function Navbar() {
               ))}
               <div className="flex flex-col gap-2 mt-4">
                 <Button variant="outline" asChild>
-                  <a href="tel:+971501234567">
+                  <a href="tel:+971529702828">
                     <Phone className="w-4 h-4" />
                     Call Now
                   </a>

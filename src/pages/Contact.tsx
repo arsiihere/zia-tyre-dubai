@@ -19,10 +19,44 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Validate inputs
+    const name = formData.name.trim().slice(0, 100);
+    const phone = formData.phone.trim().slice(0, 20);
+    const email = formData.email.trim().slice(0, 100);
+    const service = formData.service.trim().slice(0, 50);
+    const message = formData.message.trim().slice(0, 500);
+    
+    if (!name || !phone || !email || !service) {
+      toast({
+        title: "Please fill all required fields",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Create WhatsApp message
+    const whatsappMessage = `🚗 *New Service Request*
+
+👤 *Name:* ${name}
+📞 *Phone:* ${phone}
+📧 *Email:* ${email}
+🔧 *Service:* ${service}
+${message ? `📝 *Details:* ${message}` : ""}
+
+_Sent from 24/7 Tyre Service Website_`;
+
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    const whatsappUrl = `https://wa.me/971529702828?text=${encodedMessage}`;
+    
+    // Open WhatsApp
+    window.open(whatsappUrl, "_blank");
+
     toast({
-      title: "Request Received!",
-      description: "A technician is being dispatched. We'll call you within minutes.",
+      title: "Request Sent!",
+      description: "We've opened WhatsApp for you. Send the message to complete your request.",
     });
+    
     setFormData({ name: "", phone: "", email: "", service: "", message: "" });
   };
 
@@ -62,45 +96,48 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
-                      Your Name
+                      Your Name *
                     </label>
                     <Input
                       type="text"
                       placeholder="John Smith"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      maxLength={100}
                       required
                     />
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Phone Number
+                        Phone Number *
                       </label>
                       <Input
                         type="tel"
                         placeholder="+971 50 123 4567"
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        maxLength={20}
                         required
                       />
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Email Address
+                        Email Address *
                       </label>
                       <Input
                         type="email"
                         placeholder="john@example.com"
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        maxLength={100}
                         required
                       />
                     </div>
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
-                      Service Required
+                      Service Required *
                     </label>
                     <select
                       className="w-full h-11 rounded-lg border border-input bg-background px-3 text-sm focus:outline-none focus:ring-2 focus:ring-ring"
@@ -109,14 +146,14 @@ const Contact = () => {
                       required
                     >
                       <option value="">Select a service...</option>
-                      <option value="mobile-fitting">Mobile Tyre Fitting</option>
-                      <option value="home-fitting">Home Tyre Fitting</option>
-                      <option value="tyre-repair">Tyre Repair</option>
-                      <option value="tyre-change">Tyre Change</option>
-                      <option value="locking-nut">Locking Wheel Nut Removal</option>
-                      <option value="tpms">TPMS Sensor Replacement</option>
-                      <option value="van-fitting">Van Tyre Fitting</option>
-                      <option value="truck-fitting">Truck Tyre Fitting</option>
+                      <option value="Mobile Tyre Fitting">Mobile Tyre Fitting</option>
+                      <option value="Home Tyre Fitting">Home Tyre Fitting</option>
+                      <option value="Tyre Repair">Tyre Repair</option>
+                      <option value="Tyre Change">Tyre Change</option>
+                      <option value="Locking Wheel Nut Removal">Locking Wheel Nut Removal</option>
+                      <option value="TPMS Sensor Replacement">TPMS Sensor Replacement</option>
+                      <option value="Van Tyre Fitting">Van Tyre Fitting</option>
+                      <option value="Truck Tyre Fitting">Truck Tyre Fitting</option>
                     </select>
                   </div>
                   <div>
@@ -128,11 +165,12 @@ const Contact = () => {
                       rows={4}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      maxLength={500}
                     />
                   </div>
                   <Button type="submit" variant="accent" size="lg" className="w-full">
                     <Send className="w-5 h-5" />
-                    Send – We'll Call You Immediately
+                    Send via WhatsApp
                   </Button>
                 </form>
               </div>
@@ -150,7 +188,7 @@ const Contact = () => {
 
                 <div className="space-y-6">
                   <a
-                    href="tel:+971501234567"
+                    href="tel:+971529702828"
                     className="flex items-start gap-4 p-4 rounded-xl bg-accent/10 border-2 border-accent/30 hover:bg-accent/20 transition-colors group"
                   >
                     <div className="w-12 h-12 rounded-xl bg-accent-gradient flex items-center justify-center flex-shrink-0">
@@ -160,7 +198,7 @@ const Contact = () => {
                       <h3 className="font-semibold text-foreground group-hover:text-accent transition-colors">
                         Call Now – Instant Answer
                       </h3>
-                      <p className="text-accent font-bold text-lg">+971 50 123 4567</p>
+                      <p className="text-accent font-bold text-lg">+971 52 970 2828</p>
                     </div>
                   </a>
 
@@ -209,9 +247,9 @@ const Contact = () => {
                     Don't stress. Call us and we'll have a technician at your exact location in 20 minutes or less. That's our promise.
                   </p>
                   <Button variant="heroOutline" asChild className="border-accent-foreground/30 bg-accent-foreground/10 text-accent-foreground hover:bg-accent-foreground/20">
-                    <a href="tel:+971501234567">
+                    <a href="tel:+971529702828">
                       <Phone className="w-5 h-5" />
-                      +971 50 123 4567
+                      +971 52 970 2828
                     </a>
                   </Button>
                 </div>
