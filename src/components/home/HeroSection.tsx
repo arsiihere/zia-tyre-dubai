@@ -28,7 +28,7 @@ export function HeroSection() {
           <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm border border-accent/40 rounded-full px-4 py-2 mb-6 animate-fade-up">
             <Zap className="w-4 h-4 text-accent animate-pulse-slow" />
             <span className="text-primary-foreground font-semibold text-sm">
-              Instant Response • 20-Min Arrival • Dubai Wide
+              Instant Response • 5-10 Min Arrival • Dubai Wide
             </span>
           </div>
 
@@ -41,7 +41,7 @@ export function HeroSection() {
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl text-primary-foreground/80 leading-relaxed mb-8 max-w-2xl animate-fade-up delay-200">
-            Don't panic. Don't wait. The moment you call, our expert technician is dispatched to your exact location. We reach you in just 20 minutes – anywhere in Dubai, anytime, day or night.
+            Don't panic. Don't wait. The moment you call, our expert technician is dispatched to your exact location. We reach you in just 5-10 minutes – anywhere in Dubai, anytime, day or night.
           </p>
 
           {/* CTAs */}
@@ -84,7 +84,7 @@ export function HeroSection() {
             <div className="flex items-center gap-3 bg-primary-foreground/5 backdrop-blur-sm rounded-xl px-4 py-3 border border-primary-foreground/10">
               <div className="w-5 h-5 flex items-center justify-center text-accent font-bold text-sm">⚡</div>
               <div>
-                <p className="text-primary-foreground font-bold text-sm">20 Min</p>
+                <p className="text-primary-foreground font-bold text-sm">5-10 Min</p>
                 <p className="text-primary-foreground/60 text-xs">We're There</p>
               </div>
             </div>

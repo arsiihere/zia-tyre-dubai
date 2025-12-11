@@ -75,10 +75,10 @@ _Sent from 24/7 Tyre Service Website_`;
                 Get Help Now
               </span>
               <h1 className="text-4xl sm:text-5xl font-heading font-bold text-primary-foreground mb-6">
-                Help Is Just 20 Minutes Away
+                Help Is Just 5-10 Minutes Away
               </h1>
               <p className="text-lg text-primary-foreground/80 max-w-2xl">
-                Need tyres fitted or stuck with a flat? Call us now and we'll have a technician at your location in 20 minutes. No waiting around – we move fast.
+                Need tyres fitted or stuck with a flat? Call us now and we'll have a technician at your location in 5-10 minutes. No waiting around – we move fast.
               </p>
             </div>
           </div>
@@ -233,7 +233,7 @@ _Sent from 24/7 Tyre Service Website_`;
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground">Response Time</h3>
-                      <p className="text-muted-foreground">20 Minutes • 24/7 • Every Day</p>
+                      <p className="text-muted-foreground">5-10 Minutes • 24/7 • Every Day</p>
                     </div>
                   </div>
                 </div>
@@ -244,7 +244,7 @@ _Sent from 24/7 Tyre Service Website_`;
                     Stranded Right Now?
                   </h3>
                   <p className="text-accent-foreground/90 mb-4">
-                    Don't stress. Call us and we'll have a technician at your exact location in 20 minutes or less. That's our promise.
+                    Don't stress. Call us and we'll have a technician at your exact location in 5-10 minutes. That's our promise.
                   </p>
                   <Button variant="heroOutline" asChild className="border-accent-foreground/30 bg-accent-foreground/10 text-accent-foreground hover:bg-accent-foreground/20">
                     <a href="tel:+971529702828">

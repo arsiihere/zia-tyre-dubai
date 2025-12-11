@@ -37,7 +37,7 @@ const About = () => {
                   Why Speed Is Everything
                 </h2>
                 <p className="text-muted-foreground mb-4">
-                  24/7 Tyre Service was built on one simple truth: when your tyre fails, you need help immediately – not in an hour, not "soon." That's why we've engineered our entire operation around one goal: getting to you in 20 minutes or less.
+                  24/7 Tyre Service was built on one simple truth: when your tyre fails, you need help immediately – not in an hour, not "soon." That's why we've engineered our entire operation around one goal: getting to you in 5-10 minutes.
                 </p>
                 <p className="text-muted-foreground mb-4">
                   Our mobile units are strategically positioned across Dubai. The moment you call, our dispatch system finds the nearest available technician and sends them directly to your location. No paperwork. No delays. Just fast, professional help.
@@ -65,8 +65,8 @@ const About = () => {
                   <div className="w-12 h-12 rounded-full bg-accent-gradient flex items-center justify-center mx-auto mb-4">
                     <Zap className="w-6 h-6 text-accent-foreground" />
                   </div>
-                  <h3 className="text-3xl font-heading font-bold text-foreground mb-1">20 min</h3>
-                  <p className="text-muted-foreground text-sm">Arrival Time</p>
+                  <h3 className="text-3xl font-heading font-bold text-foreground mb-1">5-10 min</h3>
+                  <p className="text-muted-foreground text-sm">Arrival Window</p>
                 </div>
                 <div className="bg-muted rounded-2xl p-6 text-center">
                   <div className="w-12 h-12 rounded-full bg-accent-gradient flex items-center justify-center mx-auto mb-4">
@@ -97,7 +97,7 @@ const About = () => {
                   Lightning Fast
                 </h3>
                 <p className="text-muted-foreground">
-                  20 minutes. That's our target for every single call. We've built our entire operation around getting to you as fast as humanly possible.
+                  5-10 minutes. That's our target for every single call. We've built our entire operation around getting to you as fast as humanly possible.
                 </p>
               </div>
               <div className="bg-card rounded-2xl p-8 shadow-card">
