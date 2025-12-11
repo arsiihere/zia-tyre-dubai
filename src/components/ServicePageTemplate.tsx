@@ -51,7 +51,7 @@ export function ServicePageTemplate({
                   </Link>
                 </Button>
                 <Button variant="heroOutline" size="lg" asChild>
-                  <a href="tel:+971501234567">
+                  <a href="tel:+971529702828">
                     <Phone className="w-5 h-5" />
                     Call 24/7
                   </a>
