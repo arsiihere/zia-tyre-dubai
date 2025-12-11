@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Phone, Clock, MapPin, Shield } from "lucide-react";
+import { Phone, Zap, MapPin, Shield } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -22,68 +22,68 @@ export function HeroSection() {
       <div className="container relative z-10 pt-32 pb-20">
         <div className="max-w-3xl">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 rounded-full px-4 py-2 mb-6 animate-fade-up">
-            <div className="w-2 h-2 rounded-full bg-accent animate-pulse-slow" />
-            <span className="text-primary-foreground/90 text-sm font-medium">
-              Fast Arrival • Dubai Wide • 24/7 Service
+          <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm border border-accent/40 rounded-full px-4 py-2 mb-6 animate-fade-up">
+            <Zap className="w-4 h-4 text-accent animate-pulse-slow" />
+            <span className="text-primary-foreground font-semibold text-sm">
+              Instant Response • 20-Min Arrival • Dubai Wide
             </span>
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-6 animate-fade-up delay-100">
-            Expert Mobile Tyre{" "}
-            <span className="text-gradient">Fitting & Rescue</span>{" "}
-            Across Dubai
+            Flat Tyre?{" "}
+            <span className="text-gradient">We're Already</span>{" "}
+            On Our Way
           </h1>
 
           {/* Subheadline */}
           <p className="text-lg sm:text-xl text-primary-foreground/80 leading-relaxed mb-8 max-w-2xl animate-fade-up delay-200">
-            Stuck with a flat? Need new tyres at home or work? Our certified technicians arrive in 30–45 minutes, fully equipped to get you back on the road safely.
+            Don't panic. Don't wait. The moment you call, our expert technician is dispatched to your exact location. We reach you in just 20 minutes – anywhere in Dubai, anytime, day or night.
           </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-up delay-300">
             <Button variant="hero" size="lg" asChild>
               <Link to="/contact">
-                Book Now
+                Get Help Now
               </Link>
             </Button>
             <Button variant="heroOutline" size="lg" asChild>
               <a href="tel:+971501234567">
                 <Phone className="w-5 h-5" />
-                Call 24/7
+                Call – We Answer Instantly
               </a>
             </Button>
           </div>
 
           {/* Trust badges */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 animate-fade-up delay-400">
-            <div className="flex items-center gap-3 bg-primary-foreground/5 backdrop-blur-sm rounded-xl px-4 py-3 border border-primary-foreground/10">
-              <Clock className="w-5 h-5 text-accent" />
+            <div className="flex items-center gap-3 bg-accent/10 backdrop-blur-sm rounded-xl px-4 py-3 border border-accent/20">
+              <Zap className="w-5 h-5 text-accent" />
               <div>
-                <p className="text-primary-foreground font-semibold text-sm">24/7</p>
-                <p className="text-primary-foreground/60 text-xs">Always Open</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 bg-primary-foreground/5 backdrop-blur-sm rounded-xl px-4 py-3 border border-primary-foreground/10">
-              <MapPin className="w-5 h-5 text-accent" />
-              <div>
-                <p className="text-primary-foreground font-semibold text-sm">Dubai</p>
-                <p className="text-primary-foreground/60 text-xs">Full Coverage</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 bg-primary-foreground/5 backdrop-blur-sm rounded-xl px-4 py-3 border border-primary-foreground/10">
-              <Shield className="w-5 h-5 text-accent" />
-              <div>
-                <p className="text-primary-foreground font-semibold text-sm">Certified</p>
-                <p className="text-primary-foreground/60 text-xs">Technicians</p>
+                <p className="text-primary-foreground font-bold text-sm">Instant</p>
+                <p className="text-primary-foreground/60 text-xs">Response</p>
               </div>
             </div>
             <div className="flex items-center gap-3 bg-primary-foreground/5 backdrop-blur-sm rounded-xl px-4 py-3 border border-primary-foreground/10">
               <div className="w-5 h-5 flex items-center justify-center text-accent font-bold text-sm">⚡</div>
               <div>
-                <p className="text-primary-foreground font-semibold text-sm">30–45 min</p>
-                <p className="text-primary-foreground/60 text-xs">Response Time</p>
+                <p className="text-primary-foreground font-bold text-sm">20 Min</p>
+                <p className="text-primary-foreground/60 text-xs">We're There</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 bg-primary-foreground/5 backdrop-blur-sm rounded-xl px-4 py-3 border border-primary-foreground/10">
+              <MapPin className="w-5 h-5 text-accent" />
+              <div>
+                <p className="text-primary-foreground font-bold text-sm">All Dubai</p>
+                <p className="text-primary-foreground/60 text-xs">Covered</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 bg-primary-foreground/5 backdrop-blur-sm rounded-xl px-4 py-3 border border-primary-foreground/10">
+              <Shield className="w-5 h-5 text-accent" />
+              <div>
+                <p className="text-primary-foreground font-bold text-sm">24/7</p>
+                <p className="text-primary-foreground/60 text-xs">Always Ready</p>
               </div>
             </div>
           </div>

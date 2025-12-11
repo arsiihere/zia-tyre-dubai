@@ -1,35 +1,35 @@
-import { Clock, Shield, ThumbsUp, MapPin, Banknote, Headphones } from "lucide-react";
+import { Zap, Shield, ThumbsUp, MapPin, Banknote, Headphones } from "lucide-react";
 
 const benefits = [
   {
-    icon: Clock,
-    title: "24/7 Availability",
-    description: "Tyre emergencies don't follow schedules. That's why our team is ready around the clock, every day of the year.",
+    icon: Zap,
+    title: "Instant Response",
+    description: "The second you call, we're on it. No waiting on hold, no callbacks. Our dispatch team immediately sends a technician your way.",
   },
   {
     icon: MapPin,
-    title: "30–45 Minute Response",
-    description: "We know time matters. Our strategically located technicians reach you fast, anywhere in Dubai.",
+    title: "20-Minute Arrival",
+    description: "We don't make you wait. Our strategically positioned mobile units across Dubai ensure we reach you in just 20 minutes – guaranteed.",
   },
   {
     icon: Shield,
-    title: "Certified Technicians",
-    description: "Every member of our team is fully trained and certified to handle all types of tyre services professionally.",
+    title: "Certified Experts",
+    description: "Every technician is fully trained and certified. They've seen every tyre problem and know exactly how to fix it fast.",
   },
   {
     icon: Banknote,
-    title: "Transparent Pricing",
-    description: "No hidden fees or surprise charges. We provide clear quotes upfront so you know exactly what to expect.",
+    title: "No Hidden Fees",
+    description: "The price we quote is the price you pay. No surprises, no add-ons. Just honest, upfront pricing every time.",
   },
   {
     icon: ThumbsUp,
-    title: "Quality Guaranteed",
-    description: "We use premium tyres and equipment. Every job comes with our satisfaction guarantee for your peace of mind.",
+    title: "Done Right, First Time",
+    description: "We use professional-grade equipment and premium tyres. Your safety is our priority – we never cut corners.",
   },
   {
     icon: Headphones,
-    title: "Expert Support",
-    description: "Have questions? Our friendly team is here to help you choose the right tyres and services for your vehicle.",
+    title: "24/7 Support",
+    description: "Tyre emergencies don't wait for business hours. Neither do we. Call anytime – 3am, Sunday, holiday – we answer.",
   },
 ];
 
@@ -40,13 +40,13 @@ export function WhyChooseUsSection() {
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
-            Why Choose Us
+            Why We're Different
           </span>
           <h2 className="text-3xl sm:text-4xl font-heading font-bold text-foreground mb-4">
-            Dubai's Most Trusted Mobile Tyre Service
+            Dubai's Fastest Mobile Tyre Service
           </h2>
           <p className="text-muted-foreground text-lg">
-            We've built our reputation on reliability, expertise, and putting our customers first.
+            When you're stranded with a flat, every minute feels like an hour. That's why speed is our obsession.
           </p>
         </div>
 

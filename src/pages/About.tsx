@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { CTASection } from "@/components/home/CTASection";
-import { CheckCircle, Users, Award, Target } from "lucide-react";
+import { CheckCircle, Users, Award, Zap } from "lucide-react";
 
 const About = () => {
   return (
@@ -16,13 +16,13 @@ const About = () => {
           <div className="container relative z-10">
             <div className="max-w-3xl">
               <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-4">
-                About Zia Chohan
+                About 24/7 Tyre Service
               </span>
               <h1 className="text-4xl sm:text-5xl font-heading font-bold text-primary-foreground mb-6">
-                Your Trusted Mobile Tyre Partner in Dubai
+                Built for Speed. Driven by Trust.
               </h1>
               <p className="text-lg text-primary-foreground/80 max-w-2xl">
-                We're not just a tyre service – we're your reliable partner when you need help the most. Serving Dubai's drivers with professional, honest, and convenient mobile tyre solutions.
+                When you're stranded with a flat tyre, you don't need promises – you need help NOW. That's exactly why we exist. We're Dubai's fastest mobile tyre service because we know every minute matters.
               </p>
             </div>
           </div>
@@ -34,16 +34,16 @@ const About = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl font-heading font-bold text-foreground mb-6">
-                  Built on Reliability & Trust
+                  Why Speed Is Everything
                 </h2>
                 <p className="text-muted-foreground mb-4">
-                  Zia Chohan Mobile Tyre Services was founded with a simple mission: to make professional tyre care accessible, convenient, and stress-free for every driver in Dubai.
+                  24/7 Tyre Service was built on one simple truth: when your tyre fails, you need help immediately – not in an hour, not "soon." That's why we've engineered our entire operation around one goal: getting to you in 20 minutes or less.
                 </p>
                 <p className="text-muted-foreground mb-4">
-                  We understand that tyre problems never come at convenient times. That's why we've built a service that works around your schedule – not the other way around. Whether it's 3am on a highway or a Sunday morning at home, we're there.
+                  Our mobile units are strategically positioned across Dubai. The moment you call, our dispatch system finds the nearest available technician and sends them directly to your location. No paperwork. No delays. Just fast, professional help.
                 </p>
                 <p className="text-muted-foreground">
-                  Our team of certified technicians brings years of experience and genuine care for customer safety. Every service we provide is backed by our commitment to quality and honest pricing.
+                  Every one of our technicians is equipped with professional-grade tools and a full range of quality tyres. They arrive ready to solve your problem on the spot – whether it's 3am on Sheikh Zayed Road or Sunday afternoon at your home.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-6">
@@ -61,12 +61,12 @@ const About = () => {
                   <h3 className="text-3xl font-heading font-bold text-foreground mb-1">10+</h3>
                   <p className="text-muted-foreground text-sm">Years Experience</p>
                 </div>
-                <div className="bg-muted rounded-2xl p-6 text-center">
+                <div className="bg-accent/10 rounded-2xl p-6 text-center border-2 border-accent/30">
                   <div className="w-12 h-12 rounded-full bg-accent-gradient flex items-center justify-center mx-auto mb-4">
-                    <Target className="w-6 h-6 text-accent-foreground" />
+                    <Zap className="w-6 h-6 text-accent-foreground" />
                   </div>
-                  <h3 className="text-3xl font-heading font-bold text-foreground mb-1">30 min</h3>
-                  <p className="text-muted-foreground text-sm">Avg Response</p>
+                  <h3 className="text-3xl font-heading font-bold text-foreground mb-1">20 min</h3>
+                  <p className="text-muted-foreground text-sm">Arrival Time</p>
                 </div>
                 <div className="bg-muted rounded-2xl p-6 text-center">
                   <div className="w-12 h-12 rounded-full bg-accent-gradient flex items-center justify-center mx-auto mb-4">
@@ -85,35 +85,35 @@ const About = () => {
           <div className="container">
             <div className="text-center max-w-2xl mx-auto mb-12">
               <h2 className="text-3xl font-heading font-bold text-foreground mb-4">
-                Our Core Values
+                Our Promise to You
               </h2>
               <p className="text-muted-foreground">
-                These principles guide everything we do at Zia Chohan.
+                These aren't just words – they're the standards we hold ourselves to every single day.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-card rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-semibold text-xl text-foreground mb-3">
-                  Customer First
+                  Lightning Fast
                 </h3>
                 <p className="text-muted-foreground">
-                  Your safety and convenience are our top priorities. We design every aspect of our service around what's best for you.
+                  20 minutes. That's our target for every single call. We've built our entire operation around getting to you as fast as humanly possible.
                 </p>
               </div>
               <div className="bg-card rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-semibold text-xl text-foreground mb-3">
-                  Honest & Transparent
+                  Honest & Fair
                 </h3>
                 <p className="text-muted-foreground">
-                  No hidden fees, no unnecessary upselling. We tell you exactly what you need and charge fair prices for quality work.
+                  No hidden fees. No pressure tactics. We quote a fair price upfront and stick to it. Your trust matters more than any upsell.
                 </p>
               </div>
               <div className="bg-card rounded-2xl p-8 shadow-card">
                 <h3 className="font-heading font-semibold text-xl text-foreground mb-3">
-                  Excellence Always
+                  Always Ready
                 </h3>
                 <p className="text-muted-foreground">
-                  From our equipment to our technicians to our customer service, we maintain the highest standards in everything.
+                  24/7 means 24/7. Midnight, holidays, weekends – our team is always on standby because emergencies don't check the calendar.
                 </p>
               </div>
             </div>
