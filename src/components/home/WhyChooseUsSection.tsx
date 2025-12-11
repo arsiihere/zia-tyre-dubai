@@ -8,8 +8,8 @@ const benefits = [
   },
   {
     icon: MapPin,
-    title: "20-Minute Arrival",
-    description: "We don't make you wait. Our strategically positioned mobile units across Dubai ensure we reach you in just 20 minutes – guaranteed.",
+    title: "5-10 Minute Arrival",
+    description: "We don't make you wait. Our strategically positioned mobile units across Dubai ensure we reach you in just 5-10 minutes – guaranteed.",
   },
   {
     icon: Shield,
