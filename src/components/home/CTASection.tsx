@@ -14,17 +14,17 @@ export function CTASection() {
       <div className="container relative z-10">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-primary-foreground mb-6">
-            Need Tyres Fitted{" "}
-            <span className="text-gradient">Right Now?</span>
+            Stranded?{" "}
+            <span className="text-gradient">Help is 20 Minutes Away</span>
           </h2>
           <p className="text-lg sm:text-xl text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
-            Don't wait around at a garage. Our mobile tyre experts will come to you – at home, at work, or roadside – and get you moving again fast.
+            One call. Instant dispatch. Our technician is on the road to you immediately – no delays, no excuses. Get back on the road fast.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="hero" size="lg" asChild>
               <Link to="/contact">
-                Book Your Service
+                Get Help Now
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </Button>
@@ -37,7 +37,7 @@ export function CTASection() {
           </div>
 
           <p className="mt-8 text-primary-foreground/60 text-sm">
-            Available 24/7 across Dubai • Most jobs completed in under an hour
+            Available 24/7 • Instant Response • 20-Minute Arrival Anywhere in Dubai
           </p>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Zap, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -21,7 +21,7 @@ const Contact = () => {
     e.preventDefault();
     toast({
       title: "Request Received!",
-      description: "We'll contact you shortly to confirm your booking.",
+      description: "A technician is being dispatched. We'll call you within minutes.",
     });
     setFormData({ name: "", phone: "", email: "", service: "", message: "" });
   };
@@ -38,13 +38,13 @@ const Contact = () => {
           <div className="container relative z-10">
             <div className="max-w-3xl">
               <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-4">
-                Get In Touch
+                Get Help Now
               </span>
               <h1 className="text-4xl sm:text-5xl font-heading font-bold text-primary-foreground mb-6">
-                Book Your Mobile Tyre Service
+                Help Is Just 20 Minutes Away
               </h1>
               <p className="text-lg text-primary-foreground/80 max-w-2xl">
-                Ready to get your tyres sorted? Fill out the form below or call us directly for immediate assistance. We're available 24/7 across Dubai.
+                Need tyres fitted or stuck with a flat? Call us now and we'll have a technician at your location in 20 minutes. No waiting around – we move fast.
               </p>
             </div>
           </div>
@@ -57,7 +57,7 @@ const Contact = () => {
               {/* Form */}
               <div className="bg-card rounded-2xl p-8 shadow-card border border-border">
                 <h2 className="text-2xl font-heading font-bold text-foreground mb-6">
-                  Request a Service
+                  Request Instant Help
                 </h2>
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div>
@@ -121,10 +121,10 @@ const Contact = () => {
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-2">
-                      Additional Details
+                      Your Location & Details
                     </label>
                     <Textarea
-                      placeholder="Tell us about your vehicle, location, and when you'd like the service..."
+                      placeholder="Where are you? What's the issue? Share any details that help us reach you faster..."
                       rows={4}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -132,7 +132,7 @@ const Contact = () => {
                   </div>
                   <Button type="submit" variant="accent" size="lg" className="w-full">
                     <Send className="w-5 h-5" />
-                    Send Request
+                    Send – We'll Call You Immediately
                   </Button>
                 </form>
               </div>
@@ -141,31 +141,31 @@ const Contact = () => {
               <div className="space-y-8">
                 <div>
                   <h2 className="text-2xl font-heading font-bold text-foreground mb-6">
-                    Contact Information
+                    Fastest Way? Call Us.
                   </h2>
                   <p className="text-muted-foreground mb-8">
-                    For immediate assistance, call our 24/7 hotline. Our team is ready to help you with any tyre emergency or scheduled service.
+                    For the fastest response, call us directly. We answer instantly and dispatch a technician to your location within minutes.
                   </p>
                 </div>
 
                 <div className="space-y-6">
                   <a
                     href="tel:+971501234567"
-                    className="flex items-start gap-4 p-4 rounded-xl bg-muted hover:bg-accent/10 transition-colors group"
+                    className="flex items-start gap-4 p-4 rounded-xl bg-accent/10 border-2 border-accent/30 hover:bg-accent/20 transition-colors group"
                   >
                     <div className="w-12 h-12 rounded-xl bg-accent-gradient flex items-center justify-center flex-shrink-0">
                       <Phone className="w-6 h-6 text-accent-foreground" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground group-hover:text-accent transition-colors">
-                        24/7 Hotline
+                        Call Now – Instant Answer
                       </h3>
-                      <p className="text-muted-foreground">+971 50 123 4567</p>
+                      <p className="text-accent font-bold text-lg">+971 50 123 4567</p>
                     </div>
                   </a>
 
                   <a
-                    href="mailto:info@ziachohan.ae"
+                    href="mailto:info@247tyreservice.ae"
                     className="flex items-start gap-4 p-4 rounded-xl bg-muted hover:bg-accent/10 transition-colors group"
                   >
                     <div className="w-12 h-12 rounded-xl bg-accent-gradient flex items-center justify-center flex-shrink-0">
@@ -175,7 +175,7 @@ const Contact = () => {
                       <h3 className="font-semibold text-foreground group-hover:text-accent transition-colors">
                         Email Us
                       </h3>
-                      <p className="text-muted-foreground">info@ziachohan.ae</p>
+                      <p className="text-muted-foreground">info@247tyreservice.ae</p>
                     </div>
                   </a>
 
@@ -191,11 +191,11 @@ const Contact = () => {
 
                   <div className="flex items-start gap-4 p-4 rounded-xl bg-muted">
                     <div className="w-12 h-12 rounded-xl bg-accent-gradient flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-6 h-6 text-accent-foreground" />
+                      <Zap className="w-6 h-6 text-accent-foreground" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground">Operating Hours</h3>
-                      <p className="text-muted-foreground">24 Hours, 7 Days a Week</p>
+                      <h3 className="font-semibold text-foreground">Response Time</h3>
+                      <p className="text-muted-foreground">20 Minutes • 24/7 • Every Day</p>
                     </div>
                   </div>
                 </div>
@@ -203,10 +203,10 @@ const Contact = () => {
                 {/* Emergency Box */}
                 <div className="bg-accent-gradient rounded-2xl p-6 text-accent-foreground">
                   <h3 className="font-heading font-bold text-xl mb-2">
-                    Emergency? Call Now!
+                    Stranded Right Now?
                   </h3>
                   <p className="text-accent-foreground/90 mb-4">
-                    Stuck roadside with a flat tyre? Our emergency response team can reach you in 30–45 minutes.
+                    Don't stress. Call us and we'll have a technician at your exact location in 20 minutes or less. That's our promise.
                   </p>
                   <Button variant="heroOutline" asChild className="border-accent-foreground/30 bg-accent-foreground/10 text-accent-foreground hover:bg-accent-foreground/20">
                     <a href="tel:+971501234567">

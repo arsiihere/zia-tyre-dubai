@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, Clock } from "lucide-react";
+import { Menu, X, Phone, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -34,12 +34,8 @@ export function Navbar() {
         <div className="container flex items-center justify-between text-sm">
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
-              <Clock className="w-4 h-4 text-accent" />
-              <span>24/7 Service Available</span>
-            </div>
-            <div className="hidden sm:flex items-center gap-2">
-              <span className="text-primary-foreground/70">•</span>
-              <span>Dubai Wide Coverage</span>
+              <Zap className="w-4 h-4 text-accent" />
+              <span className="font-semibold">Instant Response • We Reach You in 20 Minutes!</span>
             </div>
           </div>
           <a href="tel:+971501234567" className="flex items-center gap-2 hover:text-accent transition-colors">
@@ -54,11 +50,11 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-accent-gradient flex items-center justify-center">
-              <span className="text-accent-foreground font-heading font-bold text-xl">Z</span>
+              <span className="text-accent-foreground font-heading font-bold text-sm">24/7</span>
             </div>
             <div>
-              <span className="font-heading font-bold text-xl text-foreground">Zia Chohan</span>
-              <span className="hidden sm:block text-xs text-muted-foreground">Mobile Tyre Experts</span>
+              <span className="font-heading font-bold text-xl text-foreground">24/7 Tyre Service</span>
+              <span className="hidden sm:block text-xs text-muted-foreground">Lightning Fast • Dubai Wide</span>
             </div>
           </Link>
 

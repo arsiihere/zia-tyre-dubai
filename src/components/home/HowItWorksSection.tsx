@@ -1,29 +1,29 @@
-import { Phone, Truck, Wrench, CheckCircle } from "lucide-react";
+import { Phone, Zap, Wrench, CheckCircle } from "lucide-react";
 
 const steps = [
   {
     icon: Phone,
     number: "01",
-    title: "Contact Us",
-    description: "Call our 24/7 hotline or book online. Tell us your location and what service you need.",
+    title: "Call Us",
+    description: "One call is all it takes. We answer instantly – no hold music, no waiting.",
   },
   {
-    icon: Truck,
+    icon: Zap,
     number: "02",
-    title: "Technician Dispatched",
-    description: "We immediately send our nearest fully-equipped technician to your location.",
+    title: "Instant Dispatch",
+    description: "The moment you hang up, our nearest technician is already on the way to you.",
   },
   {
     icon: Wrench,
     number: "03",
-    title: "On-Site Service",
-    description: "Our expert performs the tyre fitting, repair, or replacement right where you are.",
+    title: "20-Min Arrival",
+    description: "Within 20 minutes, our expert is at your location with all the tools and tyres needed.",
   },
   {
     icon: CheckCircle,
     number: "04",
-    title: "Back on the Road",
-    description: "Quality checked and ready to go. Pay securely and drive with confidence.",
+    title: "Done & Driving",
+    description: "Job completed, quality checked. You're back on the road – fast and safe.",
   },
 ];
 
@@ -37,10 +37,10 @@ export function HowItWorksSection() {
             How It Works
           </span>
           <h2 className="text-3xl sm:text-4xl font-heading font-bold text-foreground mb-4">
-            Simple Process, Fast Results
+            From Stranded to Sorted in 20 Minutes
           </h2>
           <p className="text-muted-foreground text-lg">
-            Getting your tyres sorted has never been easier. Four simple steps to get you back on the road.
+            We've eliminated every delay. Call, dispatch, arrive, done. It's that simple.
           </p>
         </div>
 
