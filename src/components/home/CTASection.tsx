@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Phone, ArrowRight } from "lucide-react";
 
@@ -23,7 +23,7 @@ export function CTASection() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button variant="hero" size="lg" asChild>
-              <Link to="/contact">
+              <Link href="/contact">
                 Get Help Now
                 <ArrowRight className="w-5 h-5" />
               </Link>

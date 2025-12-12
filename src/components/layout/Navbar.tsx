@@ -1,5 +1,8 @@
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+'use client';
+
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X, Phone, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -25,7 +28,12 @@ const serviceLinks = [
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
-  const location = useLocation();
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setMobileMenuOpen(false);
+    setServicesOpen(false);
+  }, [pathname]);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border">
@@ -48,7 +56,7 @@ export function Navbar() {
       {/* Main navbar */}
       <nav className="container py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-accent-gradient flex items-center justify-center">
               <span className="text-accent-foreground font-heading font-bold text-sm">24/7</span>
             </div>
@@ -69,10 +77,10 @@ export function Navbar() {
                   onMouseLeave={() => setServicesOpen(false)}
                 >
                   <Link
-                    to={item.href}
+                    href={item.href}
                     className={cn(
                       "px-4 py-2 rounded-lg text-sm font-medium transition-colors",
-                      location.pathname === item.href || location.pathname.includes("tyre") || location.pathname.includes("tpms") || location.pathname.includes("locking")
+                      pathname === item.href || pathname.includes("tyre") || pathname.includes("tpms") || pathname.includes("locking")
                         ? "text-accent"
                         : "text-foreground hover:text-accent hover:bg-accent/5"
                     )}
@@ -85,10 +93,10 @@ export function Navbar() {
                         {serviceLinks.map((service) => (
                           <Link
                             key={service.href}
-                            to={service.href}
+                            href={service.href}
                             className={cn(
                               "block px-4 py-2.5 rounded-lg text-sm transition-colors",
-                              location.pathname === service.href
+                              pathname === service.href
                                 ? "bg-accent/10 text-accent"
                                 : "text-foreground hover:bg-muted hover:text-accent"
                             )}
@@ -103,10 +111,10 @@ export function Navbar() {
               ) : (
                 <Link
                   key={item.name}
-                  to={item.href}
+                  href={item.href}
                   className={cn(
                     "px-4 py-2 rounded-lg text-sm font-medium transition-colors",
-                    location.pathname === item.href
+                    pathname === item.href
                       ? "text-accent"
                       : "text-foreground hover:text-accent hover:bg-accent/5"
                   )}
@@ -125,7 +133,7 @@ export function Navbar() {
               </a>
             </Button>
             <Button variant="accent" size="sm" asChild>
-              <Link to="/contact">Book Service</Link>
+              <Link href="/contact">Book Service</Link>
             </Button>
           </div>
 
@@ -145,11 +153,11 @@ export function Navbar() {
               {navigation.map((item) => (
                 <Link
                   key={item.name}
-                  to={item.href}
+                  href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
                   className={cn(
                     "px-4 py-3 rounded-lg text-sm font-medium transition-colors",
-                    location.pathname === item.href
+                    pathname === item.href
                       ? "bg-accent/10 text-accent"
                       : "text-foreground hover:bg-muted"
                   )}
@@ -165,7 +173,7 @@ export function Navbar() {
                   </a>
                 </Button>
                 <Button variant="accent" asChild>
-                  <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Book Service</Link>
+                  <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Book Service</Link>
                 </Button>
               </div>
             </div>

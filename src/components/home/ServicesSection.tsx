@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { ArrowRight, Wrench, Home, Settings, RefreshCw, Key, Gauge, Truck, CarFront } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -75,7 +75,7 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <Link
               key={service.href}
-              to={service.href}
+              href={service.href}
               className={cn(
                 "group relative bg-card rounded-2xl p-6 shadow-card hover:shadow-card-hover transition-all duration-300 border border-border hover:border-accent/30",
                 "animate-fade-up"

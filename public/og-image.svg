@@ -1,0 +1,31 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" rx="36" />
+  <circle cx="1050" cy="100" r="180" fill="#f97316" opacity="0.25" />
+  <circle cx="200" cy="580" r="200" fill="#38bdf8" opacity="0.15" />
+  <text x="80" y="180" font-family="Arial, sans-serif" font-size="22" fill="#fbbf24" font-weight="600" letter-spacing="3">
+    24/7 • 5-10 MIN ARRIVAL • DUBAI WIDE
+  </text>
+  <text x="80" y="270" font-family="Arial, sans-serif" font-size="72" fill="#f8fafc" font-weight="800">
+    Mobile Tyre Service
+  </text>
+  <text x="80" y="340" font-family="Arial, sans-serif" font-size="60" fill="#f8fafc" font-weight="800">
+    Anywhere in Dubai
+  </text>
+  <text x="80" y="405" font-family="Arial, sans-serif" font-size="26" fill="#cbd5e1" font-weight="400">
+    Emergency fitting, puncture repair, TPMS, and lock nut removal at your location—day or night.
+  </text>
+  <rect x="80" y="460" width="500" height="70" rx="16" fill="url(#accent)" />
+  <text x="110" y="507" font-family="Arial, sans-serif" font-size="28" fill="#0f172a" font-weight="700">
+    Call Now: +971 52 970 2828
+  </text>
+</svg>

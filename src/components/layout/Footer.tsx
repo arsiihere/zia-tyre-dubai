@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Phone, Mail, MapPin, Zap, Facebook, Instagram, Twitter } from "lucide-react";
 
 const services = [
@@ -54,10 +54,7 @@ export function Footer() {
             <ul className="space-y-3">
               {services.map((service) => (
                 <li key={service.href}>
-                  <Link
-                    to={service.href}
-                    className="text-sm text-primary-foreground/70 hover:text-accent transition-colors"
-                  >
+                  <Link href={service.href} className="text-sm text-primary-foreground/70 hover:text-accent transition-colors">
                     {service.name}
                   </Link>
                 </li>
@@ -71,10 +68,7 @@ export function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    to={link.href}
-                    className="text-sm text-primary-foreground/70 hover:text-accent transition-colors"
-                  >
+                  <Link href={link.href} className="text-sm text-primary-foreground/70 hover:text-accent transition-colors">
                     {link.name}
                   </Link>
                 </li>
@@ -124,8 +118,8 @@ export function Footer() {
             © {new Date().getFullYear()} 24/7 Tyre Service. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm text-primary-foreground/60">
-            <Link to="/privacy" className="hover:text-accent transition-colors">Privacy Policy</Link>
-            <Link to="/terms" className="hover:text-accent transition-colors">Terms of Service</Link>
+            <Link href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-accent transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Phone, Zap, MapPin, Shield, MessageCircle } from "lucide-react";
 
@@ -47,7 +47,7 @@ export function HeroSection() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 mb-6 animate-fade-up delay-300">
             <Button variant="hero" size="lg" asChild>
-              <Link to="/contact">
+              <Link href="/contact">
                 Get Help Now
               </Link>
             </Button>
