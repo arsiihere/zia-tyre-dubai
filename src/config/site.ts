@@ -5,7 +5,7 @@ export const siteConfig = {
   name: "24/7 Mobile Tyre Service Dubai",
   shortName: "24/7 Tyre Service",
   description:
-    "Instant 5-10 minute mobile tyre fitting, repair, TPMS replacement, and emergency call-outs across Dubai. Book professional technicians who come directly to you—24/7.",
+    "Instant 10-15 minute Tyre Puncture and Repair Instant, repair, TPMS replacement, and emergency call-outs across Dubai. Book professional technicians who come directly to you—24/7.",
   url: normalizedUrl,
   phone: "+971529702828",
   email: "info@247tyreservice.ae",

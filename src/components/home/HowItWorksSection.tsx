@@ -16,8 +16,8 @@ const steps = [
   {
     icon: Wrench,
     number: "03",
-    title: "5-10 Min Arrival",
-    description: "Within 5-10 minutes, our expert is at your location with all the tools and tyres needed.",
+    title: "10-15 Min Arrival",
+    description: "Within 10-15 minutes, our expert is at your location with all the tools and tyres needed.",
   },
   {
     icon: CheckCircle,
@@ -37,7 +37,7 @@ export function HowItWorksSection() {
             How It Works
           </span>
           <h2 className="text-3xl sm:text-4xl font-heading font-bold text-foreground mb-4">
-            From Stranded to Sorted in 5-10 Minutes
+            From Stranded to Sorted in 10-15 Minutes
           </h2>
           <p className="text-muted-foreground text-lg">
             We've eliminated every delay. Call, dispatch, arrive, done. It's that simple.

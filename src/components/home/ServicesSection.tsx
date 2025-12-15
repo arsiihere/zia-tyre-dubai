@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Wrench, Home, Settings, RefreshCw, Key, Gauge, Truck, CarFront } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -5,21 +6,27 @@ import { cn } from "@/lib/utils";
 const services = [
   {
     icon: CarFront,
-    title: "Mobile Tyre Fitting",
-    description: "Professional tyre fitting at your location. We come to you with all the equipment needed for a swift replacement.",
+    title: "Tyre Puncture and Repair Instant",
+    description: "Professional tyre repair at your location we come come to you with all equipment needed for repair puncture tyre.",
     href: "/mobile-tyre-fitting",
+    image: "/tyre-puncture-and-repair.jpeg",
+    imageAlt: "Technician fixing a tyre puncture in Dubai",
   },
   {
     icon: Home,
-    title: "Home Tyre Fitting",
-    description: "Enjoy the convenience of having your tyres fitted at home. No need to visit a garage – we bring the service to your doorstep.",
+    title: "Road side assistance",
+    description: "Professional tyre experts will reach you on the road and fix any tyre issues so that you can enjoy your journey again.",
     href: "/home-tyre-fitting",
+    image: "/road-tyre-assistant.jpg",
+    imageAlt: "Roadside tyre assistance team helping a driver in Dubai",
   },
   {
     icon: Wrench,
     title: "Tyre Repair",
-    description: "Expert puncture repairs on the spot. Our technicians assess the damage and provide lasting repairs when safe to do so.",
+    description: "Do you have any tyre repair issue, any tyre-related problem? Now you don't need to worry, the expert team will come to your location and solve your tyre issue",
     href: "/mobile-tyre-repair",
+    image: "/tyre-repair.avif",
+    imageAlt: "Technician performing a tyre repair on-site",
   },
   {
     icon: RefreshCw,
@@ -83,9 +90,23 @@ export function ServicesSection() {
               style={{ animationDelay: `${index * 50}ms` }}
             >
               <div className="mb-4">
-                <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent-gradient transition-all duration-300">
-                  <service.icon className="w-6 h-6 text-accent group-hover:text-accent-foreground transition-colors" />
-                </div>
+                {service.image ? (
+                  <div className="relative h-40 overflow-hidden rounded-xl border border-border/50 bg-muted">
+                    <Image
+                      src={service.image}
+                      alt={service.imageAlt ?? service.title}
+                      fill
+                      sizes="(min-width: 1024px) 260px, 90vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      priority
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-background/10 to-transparent" />
+                  </div>
+                ) : (
+                  <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent-gradient transition-all duration-300">
+                    <service.icon className="w-6 h-6 text-accent group-hover:text-accent-foreground transition-colors" />
+                  </div>
+                )}
               </div>
               <h3 className="font-heading font-semibold text-lg text-foreground mb-2 group-hover:text-accent transition-colors">
                 {service.title}

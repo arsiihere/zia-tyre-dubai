@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, Phone, Zap } from "lucide-react";
@@ -15,8 +16,8 @@ const navigation = [
 ];
 
 const serviceLinks = [
-  { name: "Mobile Tyre Fitting", href: "/mobile-tyre-fitting" },
-  { name: "Home Tyre Fitting", href: "/home-tyre-fitting" },
+  { name: "Tyre Puncture and Repair Instant", href: "/mobile-tyre-fitting" },
+  { name: "Road side assistance", href: "/home-tyre-fitting" },
   { name: "Tyre Repair", href: "/mobile-tyre-repair" },
   { name: "Tyre Change", href: "/mobile-tyre-change" },
   { name: "Locking Wheel Nut Removal", href: "/locking-wheel-nut-removal" },
@@ -43,7 +44,7 @@ export function Navbar() {
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
               <Zap className="w-4 h-4 text-accent" />
-              <span className="font-semibold">Instant Response • We Reach You in 20 Minutes!</span>
+              <span className="font-semibold">Instant Response • We Reach You in 10-15 Minutes!</span>
             </div>
           </div>
           <a href="tel:+971529702828" className="flex items-center gap-2 hover:text-accent transition-colors">
@@ -57,8 +58,15 @@ export function Navbar() {
       <nav className="container py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-accent-gradient flex items-center justify-center">
-              <span className="text-accent-foreground font-heading font-bold text-sm">24/7</span>
+            <div className="relative w-12 h-12 rounded-xl overflow-hidden border border-border bg-card">
+              <Image
+                src="/tyre-service-logo.png"
+                alt="24/7 Tyre Service logo"
+                fill
+                sizes="48px"
+                className="object-contain p-1.5"
+                priority
+              />
             </div>
             <div>
               <span className="font-heading font-bold text-xl text-foreground">24/7 Tyre Service</span>

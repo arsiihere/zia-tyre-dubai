@@ -7,7 +7,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "Contact 24/7 Tyre Service Dubai",
   description:
-    "Call or message for instant mobile tyre fitting, repair, and emergency call-outs anywhere in Dubai. We answer immediately and dispatch within 5-10 minutes.",
+    "Call or message for instant Tyre Puncture and Repair Instant, repair, and emergency call-outs anywhere in Dubai. We answer immediately and dispatch within 10-15 minutes.",
   path: "/contact",
   keywords: [
     "contact tyre service Dubai",
@@ -30,10 +30,10 @@ export default function ContactPage() {
               Get Help Now
             </span>
             <h1 className="text-4xl sm:text-5xl font-heading font-bold text-primary-foreground mb-6">
-              Help Is Just 5-10 Minutes Away
+              Help Is Just 10-15 Minutes Away
             </h1>
             <p className="text-lg text-primary-foreground/80 max-w-2xl">
-              Need tyres fitted or stuck with a flat? Call us now and we'll have a technician at your location in 5-10 minutes. No waiting around – we move fast.
+              Need tyres fitted or stuck with a flat? Call us now and we'll have a technician at your location in 10-15 minutes. No waiting around – we move fast.
             </p>
           </div>
         </div>
@@ -106,7 +106,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground">Response Time</h3>
-                    <p className="text-muted-foreground">5-10 Minutes • 24/7 • Every Day</p>
+                    <p className="text-muted-foreground">10-15 Minutes • 24/7 • Every Day</p>
                   </div>
                 </div>
 
@@ -115,7 +115,7 @@ export default function ContactPage() {
                     Stranded Right Now?
                   </h3>
                   <p className="text-accent-foreground/90 mb-4">
-                    Don't stress. Call us and we'll have a technician at your exact location in 5-10 minutes. That's our promise.
+                    Don't stress. Call us and we'll have a technician at your exact location in 10-15 minutes. That's our promise.
                   </p>
                   <Button
                     variant="heroOutline"

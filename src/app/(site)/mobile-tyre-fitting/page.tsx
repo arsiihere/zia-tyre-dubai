@@ -3,7 +3,7 @@ import { ServicePageTemplate } from "@/components/ServicePageTemplate";
 import { buildMetadata, buildServiceJsonLd } from "@/lib/seo";
 
 const service = {
-  title: "Mobile Tyre Fitting in Dubai",
+  title: "Tyre Puncture and Repair Instant in Dubai",
   subtitle: "Our Core Service",
   description:
     "Professional tyre fitting that comes to you. Whether you're at home, at work, or stranded roadside, our certified technicians arrive fully equipped to fit your new tyres quickly and safely.",
@@ -39,7 +39,7 @@ export const metadata = buildMetadata({
   description: service.description,
   path: "/mobile-tyre-fitting",
   keywords: [
-    "mobile tyre fitting Dubai",
+    "Tyre Puncture and Repair Instant Dubai",
     "mobile tire replacement Dubai",
     "tyre fitting at home Dubai",
     "emergency tyre fitting Dubai",

@@ -8,8 +8,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 
 const serviceOptions = [
-  "Mobile Tyre Fitting",
-  "Home Tyre Fitting",
+  "Tyre Puncture and Repair Instant",
+  "Road side assistance",
   "Tyre Repair",
   "Tyre Change",
   "Locking Wheel Nut Removal",

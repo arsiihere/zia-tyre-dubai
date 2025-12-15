@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   keywords: [
-    "mobile tyre fitting Dubai",
+    "Tyre Puncture and Repair Instant Dubai",
     "mobile tyre repair Dubai",
     "24/7 tyre service",
     "emergency tyre replacement",
@@ -57,7 +57,12 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/tyre-service-logo.png", type: "image/png" },
+      { url: "/favicon.ico", rel: "legacy-icon" },
+    ],
+    shortcut: "/tyre-service-logo.png",
+    apple: "/tyre-service-logo.png",
   },
 };
 

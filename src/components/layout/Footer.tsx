@@ -2,8 +2,8 @@ import Link from "next/link";
 import { Phone, Mail, MapPin, Zap, Facebook, Instagram, Twitter } from "lucide-react";
 
 const services = [
-  { name: "Mobile Tyre Fitting", href: "/mobile-tyre-fitting" },
-  { name: "Home Tyre Fitting", href: "/home-tyre-fitting" },
+  { name: "Tyre Puncture and Repair Instant", href: "/mobile-tyre-fitting" },
+  { name: "Road side assistance", href: "/home-tyre-fitting" },
   { name: "Mobile Tyre Repair", href: "/mobile-tyre-repair" },
   { name: "Mobile Tyre Change", href: "/mobile-tyre-change" },
   { name: "Locking Wheel Nut Removal", href: "/locking-wheel-nut-removal" },
@@ -33,7 +33,7 @@ export function Footer() {
               <span className="font-heading font-bold text-xl">24/7 Tyre Service</span>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              Dubai's fastest mobile tyre service. Instant response, 5-10 minute arrival, expert technicians. When you're stranded, we're already on our way.
+              Dubai's fastest mobile tyre service. Instant response, 10-15 minute arrival, expert technicians. When you're stranded, we're already on our way.
             </p>
             <div className="flex items-center gap-4 pt-2">
               <a href="#" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-accent transition-colors">
@@ -103,7 +103,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Zap className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-primary-foreground/70">
-                  5-10 Minute Arrival • 24/7
+                  10-15 Minute Arrival • 24/7
                 </span>
               </li>
             </ul>

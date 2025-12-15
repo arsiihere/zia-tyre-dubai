@@ -5,7 +5,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata = buildMetadata({
   title: "About 24/7 Tyre Service Dubai",
   description:
-    "Learn why drivers trust our 5-10 minute mobile tyre response across Dubai. Certified technicians, fair pricing, and a relentless focus on getting you back on the road fast.",
+    "Learn why drivers trust our 10-15 minute mobile tyre response across Dubai. Certified technicians, fair pricing, and a relentless focus on getting you back on the road fast.",
   path: "/about",
   keywords: [
     "about tyre service Dubai",
@@ -45,7 +45,7 @@ export default function AboutPage() {
                 Why Speed Is Everything
               </h2>
               <p className="text-muted-foreground mb-4">
-                24/7 Tyre Service was built on one simple truth: when your tyre fails, you need help immediately – not in an hour, not "soon." That's why we've engineered our entire operation around one goal: getting to you in 5-10 minutes.
+                24/7 Tyre Service was built on one simple truth: when your tyre fails, you need help immediately – not in an hour, not "soon." That's why we've engineered our entire operation around one goal: getting to you in 10-15 minutes.
               </p>
               <p className="text-muted-foreground mb-4">
                 Our mobile units are strategically positioned across Dubai. The moment you call, our dispatch system finds the nearest available technician and sends them directly to your location. No paperwork. No delays. Just fast, professional help.
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 <div className="w-12 h-12 rounded-full bg-accent-gradient flex items-center justify-center mx-auto mb-4">
                   <Zap className="w-6 h-6 text-accent-foreground" />
                 </div>
-                <h3 className="text-3xl font-heading font-bold text-foreground mb-1">5-10 min</h3>
+                <h3 className="text-3xl font-heading font-bold text-foreground mb-1">10-15 min</h3>
                 <p className="text-muted-foreground text-sm">Arrival Window</p>
               </div>
               <div className="bg-muted rounded-2xl p-6 text-center">
@@ -104,7 +104,7 @@ export default function AboutPage() {
                 Lightning Fast
               </h3>
               <p className="text-muted-foreground">
-                5-10 minutes. That's our target for every single call. We've built our entire operation around getting to you as fast as humanly possible.
+                10-15 minutes. That's our target for every single call. We've built our entire operation around getting to you as fast as humanly possible.
               </p>
             </div>
             <div className="bg-card rounded-2xl p-8 shadow-card">
