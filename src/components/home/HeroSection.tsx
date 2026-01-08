@@ -36,7 +36,7 @@ export function HeroSection() {
 
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-6 animate-fade-up delay-100">
-              Flat Tyre?{" "}
+              Flat ?{" "}
               <span className="text-gradient">We're Already</span>{" "}
               On Our Way
             </h1>
