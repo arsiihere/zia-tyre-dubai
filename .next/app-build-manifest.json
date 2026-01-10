@@ -1,0 +1,172 @@
+{
+  "pages": {
+    "/not-found": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-764cda20c6e1258e.js",
+      "static/chunks/117-aea47a6b77834f02.js",
+      "static/chunks/main-app-b74628897b9e6cd4.js",
+      "static/chunks/972-ca9a4b5b57b6e369.js",
+      "static/chunks/app/not-found-57002df145fd5c96.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-764cda20c6e1258e.js",
+      "static/chunks/117-aea47a6b77834f02.js",
+      "static/chunks/main-app-b74628897b9e6cd4.js",
+      "static/chunks/app/_not-found/page-15c1abf58b1e965d.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-764cda20c6e1258e.js",
+      "static/chunks/117-aea47a6b77834f02.js",
+      "static/chunks/main-app-b74628897b9e6cd4.js",
+      "static/css/ca4174fb85ace977.css",
+      "static/chunks/336-bb56a0dd36f01f64.js",
+      "static/chunks/3-51450b5c69589917.js",
+      "static/chunks/841-41ea581048260df1.js",
+      "static/chunks/app/layout-da2497f8e0ea5048.js"
+    ],
+    "/(site)/contact/page": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-764cda20c6e1258e.js",
+      "static/chunks/117-aea47a6b77834f02.js",
+      "static/chunks/main-app-b74628897b9e6cd4.js",
+      "static/chunks/336-bb56a0dd36f01f64.js",
+      "static/chunks/972-ca9a4b5b57b6e369.js",
+      "static/chunks/app/(site)/contact/page-a3c35b18ab037387.js"
+    ],
+    "/(site)/layout": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-764cda20c6e1258e.js",
+      "static/chunks/117-aea47a6b77834f02.js",
+      "static/chunks/main-app-b74628897b9e6cd4.js",
+      "static/chunks/336-bb56a0dd36f01f64.js",
+      "static/chunks/972-ca9a4b5b57b6e369.js",
+      "static/chunks/878-f6ec94ed4b4c8747.js",
+      "static/chunks/app/(site)/layout-c3a5a18f3a3bcb2c.js"
+    ],
+    "/(site)/mobile-tyre-change/page": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-764cda20c6e1258e.js",
+      "static/chunks/117-aea47a6b77834f02.js",
+      "static/chunks/main-app-b74628897b9e6cd4.js",
+      "static/chunks/336-bb56a0dd36f01f64.js",
+      "static/chunks/972-ca9a4b5b57b6e369.js",
+      "static/chunks/3-51450b5c69589917.js",
+      "static/chunks/app/(site)/mobile-tyre-change/page-55ebc780b6d36d8a.js"
+    ],
+    "/(site)/mobile-tyre-repair/page": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-764cda20c6e1258e.js",
+      "static/chunks/117-aea47a6b77834f02.js",
+      "static/chunks/main-app-b74628897b9e6cd4.js",
+      "static/chunks/336-bb56a0dd36f01f64.js",
+      "static/chunks/972-ca9a4b5b57b6e369.js",
+      "static/chunks/3-51450b5c69589917.js",
+      "static/chunks/app/(site)/mobile-tyre-repair/page-f779941d8482f813.js"
+    ],
+    "/(site)/mobile-tyre-fitting/page": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-764cda20c6e1258e.js",
+      "static/chunks/117-aea47a6b77834f02.js",
+      "static/chunks/main-app-b74628897b9e6cd4.js",
+      "static/chunks/336-bb56a0dd36f01f64.js",
+      "static/chunks/972-ca9a4b5b57b6e369.js",
+      "static/chunks/3-51450b5c69589917.js",
+      "static/chunks/app/(site)/mobile-tyre-fitting/page-8791697e6b63f693.js"
+    ],
+    "/(site)/locking-wheel-nut-removal/page": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-764cda20c6e1258e.js",
+      "static/chunks/117-aea47a6b77834f02.js",
+      "static/chunks/main-app-b74628897b9e6cd4.js",
+      "static/chunks/336-bb56a0dd36f01f64.js",
+      "static/chunks/972-ca9a4b5b57b6e369.js",
+      "static/chunks/3-51450b5c69589917.js",
+      "static/chunks/app/(site)/locking-wheel-nut-removal/page-09e7c48184254629.js"
+    ],
+    "/(site)/page": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-764cda20c6e1258e.js",
+      "static/chunks/117-aea47a6b77834f02.js",
+      "static/chunks/main-app-b74628897b9e6cd4.js",
+      "static/chunks/336-bb56a0dd36f01f64.js",
+      "static/chunks/972-ca9a4b5b57b6e369.js",
+      "static/chunks/878-f6ec94ed4b4c8747.js",
+      "static/chunks/app/(site)/page-143c828675ed2fed.js"
+    ],
+    "/(site)/services/page": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-764cda20c6e1258e.js",
+      "static/chunks/117-aea47a6b77834f02.js",
+      "static/chunks/main-app-b74628897b9e6cd4.js",
+      "static/chunks/336-bb56a0dd36f01f64.js",
+      "static/chunks/972-ca9a4b5b57b6e369.js",
+      "static/chunks/878-f6ec94ed4b4c8747.js",
+      "static/chunks/app/(site)/services/page-1f34754933fa8b9f.js"
+    ],
+    "/(site)/privacy/page": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-764cda20c6e1258e.js",
+      "static/chunks/117-aea47a6b77834f02.js",
+      "static/chunks/main-app-b74628897b9e6cd4.js",
+      "static/chunks/app/(site)/privacy/page-621947bbeda4bcb2.js"
+    ],
+    "/(site)/home-tyre-fitting/page": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-764cda20c6e1258e.js",
+      "static/chunks/117-aea47a6b77834f02.js",
+      "static/chunks/main-app-b74628897b9e6cd4.js",
+      "static/chunks/336-bb56a0dd36f01f64.js",
+      "static/chunks/972-ca9a4b5b57b6e369.js",
+      "static/chunks/3-51450b5c69589917.js",
+      "static/chunks/app/(site)/home-tyre-fitting/page-0fd79622c0147dca.js"
+    ],
+    "/(site)/truck-tyre-fitting/page": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-764cda20c6e1258e.js",
+      "static/chunks/117-aea47a6b77834f02.js",
+      "static/chunks/main-app-b74628897b9e6cd4.js",
+      "static/chunks/336-bb56a0dd36f01f64.js",
+      "static/chunks/972-ca9a4b5b57b6e369.js",
+      "static/chunks/3-51450b5c69589917.js",
+      "static/chunks/app/(site)/truck-tyre-fitting/page-a4ce4d9cd19c4b32.js"
+    ],
+    "/(site)/tpms-sensor-replacement/page": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-764cda20c6e1258e.js",
+      "static/chunks/117-aea47a6b77834f02.js",
+      "static/chunks/main-app-b74628897b9e6cd4.js",
+      "static/chunks/336-bb56a0dd36f01f64.js",
+      "static/chunks/972-ca9a4b5b57b6e369.js",
+      "static/chunks/3-51450b5c69589917.js",
+      "static/chunks/app/(site)/tpms-sensor-replacement/page-ed2a13c43e9d3baf.js"
+    ],
+    "/(site)/about/page": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-764cda20c6e1258e.js",
+      "static/chunks/117-aea47a6b77834f02.js",
+      "static/chunks/main-app-b74628897b9e6cd4.js",
+      "static/chunks/336-bb56a0dd36f01f64.js",
+      "static/chunks/972-ca9a4b5b57b6e369.js",
+      "static/chunks/app/(site)/about/page-ceda87d3a401fdab.js"
+    ],
+    "/(site)/van-tyre-fitting/page": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-764cda20c6e1258e.js",
+      "static/chunks/117-aea47a6b77834f02.js",
+      "static/chunks/main-app-b74628897b9e6cd4.js",
+      "static/chunks/336-bb56a0dd36f01f64.js",
+      "static/chunks/972-ca9a4b5b57b6e369.js",
+      "static/chunks/3-51450b5c69589917.js",
+      "static/chunks/app/(site)/van-tyre-fitting/page-6a0289d2156fe2ab.js"
+    ],
+    "/(site)/terms/page": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-764cda20c6e1258e.js",
+      "static/chunks/117-aea47a6b77834f02.js",
+      "static/chunks/main-app-b74628897b9e6cd4.js",
+      "static/chunks/app/(site)/terms/page-f4fa59ff84301072.js"
+    ]
+  }
+}

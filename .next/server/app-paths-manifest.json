@@ -1,0 +1,19 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/(site)/contact/page": "app/(site)/contact/page.js",
+  "/(site)/mobile-tyre-change/page": "app/(site)/mobile-tyre-change/page.js",
+  "/(site)/mobile-tyre-repair/page": "app/(site)/mobile-tyre-repair/page.js",
+  "/(site)/mobile-tyre-fitting/page": "app/(site)/mobile-tyre-fitting/page.js",
+  "/(site)/locking-wheel-nut-removal/page": "app/(site)/locking-wheel-nut-removal/page.js",
+  "/(site)/page": "app/(site)/page.js",
+  "/(site)/services/page": "app/(site)/services/page.js",
+  "/(site)/privacy/page": "app/(site)/privacy/page.js",
+  "/(site)/home-tyre-fitting/page": "app/(site)/home-tyre-fitting/page.js",
+  "/(site)/truck-tyre-fitting/page": "app/(site)/truck-tyre-fitting/page.js",
+  "/(site)/tpms-sensor-replacement/page": "app/(site)/tpms-sensor-replacement/page.js",
+  "/(site)/about/page": "app/(site)/about/page.js",
+  "/(site)/van-tyre-fitting/page": "app/(site)/van-tyre-fitting/page.js",
+  "/(site)/terms/page": "app/(site)/terms/page.js"
+}

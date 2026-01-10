@@ -5,75 +5,11 @@ import { Providers } from "@/components/providers";
 import { siteConfig } from "@/config/site";
 import { organizationJsonLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  metadataBase: new URL(siteConfig.url),
-  title: {
-    default: siteConfig.name,
-    template: `%s | ${siteConfig.shortName}`,
-  },
-  description: siteConfig.description,
-  keywords: [
-    "Tyre Puncture and Repair Instant Dubai",
-    "mobile tyre repair Dubai",
-    "24/7 tyre service",
-    "emergency tyre replacement",
-    "TPMS sensor replacement Dubai",
-    "lock nut removal Dubai",
-  ],
-  alternates: {
-    canonical: siteConfig.url,
-  },
-  openGraph: {
-    title: siteConfig.name,
-    description: siteConfig.description,
-    url: siteConfig.url,
-    siteName: siteConfig.name,
-    locale: "en_US",
-    type: "website",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: siteConfig.name,
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: siteConfig.name,
-    description: siteConfig.description,
-    images: ["/og-image.png"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
-  },
-  icons: {
-    icon: [
-      { url: "/tyre-service-logo.png", type: "image/png" },
-      { url: "/favicon.ico", rel: "legacy-icon" },
-    ],
-    shortcut: "/tyre-service-logo.png",
-    apple: "/tyre-service-logo.png",
-  },
-};
-
-export const viewport: Viewport = {
-  themeColor: "#0f172a",
-};
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <head>
+        {/* Google Tag Manager */}
         <Script id="gtm" strategy="beforeInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -98,7 +34,9 @@ var target = 'https://www.clickcease.com/monitor/stat.js';
 script.src = target;var elem = document.head;elem.appendChild(script);`}
         </Script>
       </head>
+
       <body className="antialiased">
+        {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-55R2CR9M"
@@ -113,7 +51,12 @@ script.src = target;var elem = document.head;elem.appendChild(script);`}
           </a>
         </noscript>
         <Providers>{children}</Providers>
-        <Script id="org-jsonld" type="application/ld+json" strategy="afterInteractive">
+
+        <Script
+          id="org-jsonld"
+          type="application/ld+json"
+          strategy="afterInteractive"
+        >
           {JSON.stringify(organizationJsonLd)}
         </Script>
       </body>
